@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+$color-very_dark_magenta: hsl(300, 43%, 22%);
+$color-soft_pink: hsl(300, 43%, 22%);
+
+$color-dark_gray_magenta: hsl(303, 10%, 53%);
+$color-light_dark_magenta: hsl(300, 24%, 96%);
+$color-white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-image: url(bg-pattern-top-desktop.svg);
+  height: 100vh;
+  width: 100%;
+  padding: 10rem 3rem;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  .text-header {
+    color: $color-very_dark_magenta;
+    font-size: 5.25rem;
+    font-weight: 500;
+    line-height: 4.25rem;
+    padding-bottom: 3rem;
+  }
+  .text-content {
+    color: $color-dark_gray_magenta;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.review-card {
+  text-align: center;
+  background-color: $color-light_dark_magenta;
+  padding: 2rem;
+  margin-block: 1rem;
+  border-radius: 0.5rem;
+}
+
+.review-container {
+  .review-header {
+    color: $color-very_dark_magenta;
+    font-size: 1.1rem;
+  }
+  .review-stars {
+    padding-bottom: 1rem;
+    img {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+  }
+}
+
+.customers-review-container {
+  background-color: $color-very_dark_magenta;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  .customers-card-container {
+    display: flex;
+    .customer {
+      img {
+        border-radius: 50%;
+        width: 12%;
+        margin-right: 3rem;
+      }
+      .customer-profile {
+        display: flex;
+        align-items: center;
+      }
+      .customer-info {
+        color: $color-white;
+        h3 {
+          font-weight: 500;
+          font-size: 1.6rem;
+        }
+        span {
+          font-size: 1.6rem;
+          color: $color-dark_gray_magenta;
+        }
+      }
+      .customer-review {
+        color: white;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
