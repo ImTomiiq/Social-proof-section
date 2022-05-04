@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@ html {
 
 .container {
   background-image: url(bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   padding: 10rem 3rem;
@@ -64,24 +65,22 @@ html {
 }
 
 .customers-review-container {
-  background-color: #502050;
   padding: 4rem;
   border-radius: 0.5rem;
+  padding-bottom: 10rem;
 }
 
-.customers-review-container .customers-card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.customers-review-container .customers-card-container--1 {
+  background-color: #502050;
 }
 
-.customers-review-container .customers-card-container .customer img {
+.customers-review-container .customers-card-container--1 .customer img {
   border-radius: 50%;
   width: 12%;
   margin-right: 3rem;
 }
 
-.customers-review-container .customers-card-container .customer .customer-profile {
+.customers-review-container .customers-card-container--1 .customer .customer-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,24 +89,124 @@ html {
           align-items: center;
 }
 
-.customers-review-container .customers-card-container .customer .customer-info {
+.customers-review-container .customers-card-container--1 .customer .customer-info {
   color: white;
 }
 
-.customers-review-container .customers-card-container .customer .customer-info h3 {
+.customers-review-container .customers-card-container--1 .customer .customer-info h3 {
   font-weight: 500;
   font-size: 1.6rem;
 }
 
-.customers-review-container .customers-card-container .customer .customer-info span {
+.customers-review-container .customers-card-container--1 .customer .customer-info span {
   font-size: 1.6rem;
   color: #937b92;
 }
 
-.customers-review-container .customers-card-container .customer .customer-review {
+.customers-review-container .customers-card-container--1 .customer .customer-review {
   color: white;
   padding-top: 2rem;
   font-size: 2rem;
   font-weight: 400;
+}
+
+.customers-review-container .customers-card-container--2 {
+  background-color: #502050;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.customers-review-container .customers-card-container--2 .customer img {
+  border-radius: 50%;
+  width: 12%;
+  margin-right: 3rem;
+}
+
+.customers-review-container .customers-card-container--2 .customer .customer-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers-review-container .customers-card-container--2 .customer .customer-info {
+  color: white;
+}
+
+.customers-review-container .customers-card-container--2 .customer .customer-info h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.customers-review-container .customers-card-container--2 .customer .customer-info span {
+  font-size: 1.6rem;
+  color: #937b92;
+}
+
+.customers-review-container .customers-card-container--2 .customer .customer-review {
+  color: white;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.customers-card-container--3,
+.customers-card-container--2,
+.customers-card-container--1 {
+  background-color: #502050;
+  padding: 4rem 3rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.customers-card-container--3 .customer img,
+.customers-card-container--2 .customer img,
+.customers-card-container--1 .customer img {
+  border-radius: 50%;
+  width: 14%;
+  margin-right: 3rem;
+}
+
+.customers-card-container--3 .customer .customer-profile,
+.customers-card-container--2 .customer .customer-profile,
+.customers-card-container--1 .customer .customer-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.customers-card-container--3 .customer .customer-info,
+.customers-card-container--2 .customer .customer-info,
+.customers-card-container--1 .customer .customer-info {
+  color: white;
+}
+
+.customers-card-container--3 .customer .customer-info h3,
+.customers-card-container--2 .customer .customer-info h3,
+.customers-card-container--1 .customer .customer-info h3 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.customers-card-container--3 .customer .customer-info span,
+.customers-card-container--2 .customer .customer-info span,
+.customers-card-container--1 .customer .customer-info span {
+  font-size: 1.7rem;
+  color: #937b92;
+}
+
+.customers-card-container--3 .customer .customer-review,
+.customers-card-container--2 .customer .customer-review,
+.customers-card-container--1 .customer .customer-review {
+  color: white;
+  padding-top: 2rem;
+  font-size: 1.9rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

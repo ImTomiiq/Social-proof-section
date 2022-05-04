@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap");
 
 $color-very_dark_magenta: hsl(300, 43%, 22%);
 $color-soft_pink: hsl(300, 43%, 22%);
@@ -20,6 +20,7 @@ html {
 
 .container {
   background-image: url(bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   padding: 10rem 3rem;
@@ -68,11 +69,11 @@ html {
 }
 
 .customers-review-container {
-  background-color: $color-very_dark_magenta;
   padding: 4rem;
   border-radius: 0.5rem;
-  .customers-card-container {
-    display: flex;
+  padding-bottom: 10rem;
+  .customers-card-container--1 {
+    background-color: $color-very_dark_magenta;
     .customer {
       img {
         border-radius: 50%;
@@ -100,6 +101,77 @@ html {
         font-size: 2rem;
         font-weight: 400;
       }
+    }
+  }
+  .customers-card-container--2 {
+    background-color: $color-very_dark_magenta;
+    padding: 5rem;
+    margin-top: 5rem;
+    .customer {
+      img {
+        border-radius: 50%;
+        width: 12%;
+        margin-right: 3rem;
+      }
+      .customer-profile {
+        display: flex;
+        align-items: center;
+      }
+      .customer-info {
+        color: $color-white;
+        h3 {
+          font-weight: 500;
+          font-size: 1.6rem;
+        }
+        span {
+          font-size: 1.6rem;
+          color: $color-dark_gray_magenta;
+        }
+      }
+      .customer-review {
+        color: white;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.customers-card-container--3,
+.customers-card-container--2,
+.customers-card-container--1 {
+  background-color: $color-very_dark_magenta;
+  padding: 4rem 3rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  .customer {
+    img {
+      border-radius: 50%;
+      width: 14%;
+      margin-right: 3rem;
+    }
+    .customer-profile {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+    .customer-info {
+      color: $color-white;
+      h3 {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.7rem;
+        color: $color-dark_gray_magenta;
+      }
+    }
+    .customer-review {
+      color: white;
+      padding-top: 2rem;
+      font-size: 1.9rem;
+      font-weight: 300;
     }
   }
 }
