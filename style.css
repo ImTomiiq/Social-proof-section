@@ -132,4 +132,91 @@ html {
   letter-spacing: 0.1rem;
   line-height: 2.25rem;
 }
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 20rem;
+  }
+  .first-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .text-container {
+    max-width: 40%;
+    text-align: start;
+  }
+  .review-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .review-card .review-stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-inline: 1rem;
+  }
+  .review-container {
+    background-color: yellow;
+    width: 50%;
+  }
+  .sub-container--1 {
+    background-color: red;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sub-container--2 {
+    background-color: red;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sub-container--3 {
+    background-color: red;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .customers-review-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: pink;
+  }
+  .customers-review-container .customers-card-container--2 {
+    margin-block: 10rem;
+  }
+  .customers-review-container .customers-card-container--3 {
+    margin-block: 15rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

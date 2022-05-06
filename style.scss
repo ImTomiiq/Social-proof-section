@@ -21,6 +21,7 @@ html {
 .container {
   background-image: url(bg-pattern-top-mobile.svg),
     url(bg-pattern-bottom-mobile.svg);
+
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -109,6 +110,63 @@ html {
         letter-spacing: 0.1rem;
         line-height: 2.25rem;
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 20rem;
+  }
+  .first-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-container {
+    max-width: 40%;
+    text-align: start;
+  }
+  .review-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .review-stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: 1rem;
+    }
+  }
+  .review-container {
+    background-color: yellow;
+    width: 50%;
+  }
+  .sub-container--1 {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sub-container--2 {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sub-container--3 {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .customers-review-container {
+    display: flex;
+    background-color: pink;
+    .customers-card-container--2 {
+      margin-block: 10rem;
+    }
+    .customers-card-container--3 {
+      margin-block: 15rem;
     }
   }
 }
